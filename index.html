@@ -11,6 +11,15 @@
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/zenburn.css">
+        <style>
+            #logo{
+                background: transparent;
+                border: none;
+                box-shadow: none;
+                width: 600px;
+                margin: 0;
+            }
+        </style>
 
 		<!-- Printing and PDF exports -->
 		<script>
@@ -24,8 +33,216 @@
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+                <section>
+                    <h3>Intro to </h3>
+                    <h1><img alt="Meteor" id="logo" src="assets/logo.svg" /></h1>
+                    <h4>a full-stack JavaScript Framework</h4>
+                    <p>
+                        <small>Created by <a href="http://summanerd.com">Mauricia Ragland</a></small>
+                    </p>
+                </section>
+                <section>
+                    <h2>Goal</h2>
+                    <p class="fragment">
+                        informed decision
+                    </p>
+                </section>
+				<section>
+                    <section>
+                        <h2>What is Meteor?</h2>
+                        <p class="fragment">
+                            Meteor is an open source platform for web, mobile, and desktop.
+                            <br/>
+                            <a href="https://www.meteor.com/">-- meteor.com</a>
+                        </p>
+                        <aside class="notes">
+
+                        </aside>
+                    </section>
+                    <section>
+                        <h2>Technically</h2>
+                        <ul>
+                            <li>JavaScript for front & back-end</li>
+                            <li class="fragment">Same code on front and back</li>
+                        </ul>
+                    </section>
+                    <section>
+<pre><code>
+    // meteor install accounts-password
+    // [accounts-facebook | accounts-twitter]
+
+    Account.createUser({
+        username: 'mauricia',
+        email: 'mauricia@summanerd.com',
+        password: '*****'
+    }, callback);
+
+</code></pre>
+                        <a href="http://guide.meteor.com/accounts.html">http://guide.meteor.com/accounts.html</a>
+                    </section>
+                    <section>
+                        <h3>Purpose</h3>
+                        <p class="fragment">
+                            Reduce Bottle Neck
+                        </p>
+                        <ul>
+                            <li class="fragment">User Management</li>
+                            <li class="fragment">Persisting Data</li>
+                            <li class="fragment">UI interact with Data Source</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Everything from database to UI</h3>
+                        <ul>
+                            <li class="fragment">Mongo DB</li>
+                            <li class="fragment">full stack reactivity
+                                <ul>
+                                    <li>Distributed Data Protocol (DDP)</li>
+                                    <li>data on the wire</li>
+                                    <li>pub/sub</li>
+                                </ul>
+                            <li class="fragment">Minimongo</li>
+                        </ul>
+                        <aside class="notes">
+                            Meteor-specific protocol for managing publications and subscriptions over a web socket
+                        </aside>
+                    </section>
+                    <section>
+                        <h3>UI</h3>
+                        <ul>
+                            <li class="fragment">Meteor's frontend rendering system
+                                <ul>
+                                    <li class="fragment">Blaze - reactive rendering libray</li>
+                                    <li class="fragment">Spacebars (HandleBars)</li>
+                                    <li class="fragment">Tracker - reactivity system</li>
+                                </ul>
+                            </li>
+                            <li class="fragment">ReactJS</li>
+                            <li class="fragment">Angular2</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>Continuous Deployment</h3>
+                                <pre class="fragment"><code>
+    meteor deploy
+                                </code></pre>
+                    </section>
+                    <section>
+                        <h3>Overall...</h3>
+                    </section>
+                    <section>
+                        <p>
+                            it's a framework meant for getting to market asap without sacrificing quality
+                        </p>
+                    </section>
+                    <section>
+                        <p>
+                            it's a framework meant for apps that require real-time data (chat room, polling, etc)
+                        </p>
+                    </section>
+                    <section>
+                        <p>
+                            it's cutting-edge and a great go to for developers to stay current while learning best practices
+                        </p>
+                    </section>
+				</section>
+
+                <section>
+                    <h3>My Introduction to Meteor</h3>
+                    <p class="fragment" style="color: #de4f4f">
+                        Hate at first site
+                    </p>
+                    <p class="fragment">
+                        More limitations than benefits...
+                    </p>
+                    <p class="fragment">
+                        Still built the MVP and celebrated when it was over
+                    </p>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>Why I came crawling back</h3>
+                        <p class="fragment" style="color: #de4f4f">
+                            Built a web app with user management, database, REST API, continuous integration, continuous deployment
+                        </p>
+                        <aside class="notes">
+                            <ul>
+                                <li>Setting up CI made me wonder</li>
+                                <li>Implementing user management </li>
+                            </ul>
+                        </aside>
+                    </section>
+                    <section>
+                        <h3>What's the Problem</h3>
+                        <p class="fragment">
+                            preference vs issue
+                        </p>
+                        <p class="fragment">
+                            think outside the box
+                        </p>
+                        <p class="fragment">
+                            pro vs con
+                        </p>
+                    </section>
+                </section>
+
+                <section>
+                    <section>
+                        <h3>When You Should Use Meteor</h3>
+                        <ul>
+                            <li class="fragment">Time Restraint</li>
+                            <li class="fragment">Real-time application</li>
+                            <li class="fragment">Reactive Programming</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h3>When You Should NOT Use Meteor</h3>
+                        <ul>
+                            <li class="fragment">Back End Service Only</li>
+                            <li class="fragment">Unable to use MongoDB</li>
+                            <li class="fragment">Website vs Web App</li>
+                        </ul>
+                    </section>
+                </section>
+
+                <section id="popularity">
+                    <section>
+                        <a href="https://github.com/meteor/meteor">
+                            <img src="assets/github-meteor.png" />
+                        </a>
+                        <a href="https://github.com/expressjs/express">
+                            <img src="assets/github-express.png" />
+                        </a>
+                        <a href="https://github.com/expressjs/express">
+                            <img src="assets/stack-meteor.png" width="200" />
+                        </a>
+                        <a href="https://github.com/expressjs/express">
+                            <img src="assets/stack-express.png" width="215" />
+                        </a>
+                        <!--<a href="https://github.com/facebook/react">-->
+                            <!--<img src="assets/github-react.png" />-->
+                        <!--</a>-->
+
+                    </section>
+                    <section>
+                    </section>
+
+
+                </section>
+                <section id="resources">
+                    <h2>Resources</h2>
+                    <ul>
+                        <li><a href="https://www.meteor.com/tutorials">Tutorial</a></li>
+                        <li><a href="http://guide.meteor.com/">Guide</a></li>
+                        <li><a href="https://www.discovermeteor.com/">discovermeteor.com</a></li>
+                        <li><a href="https://docs.meteor.com/">docs.meteor.com</a></li>
+                        <li><a href="https://trello.com/b/hjBDflxp/meteor-roadmap">Meteor Roadmap on Trello</a></li>
+                    </ul>
+                </section>
+                <section id="resources">
+                    <h2>Questions?</h2>
+                </section>
 			</div>
 		</div>
 
